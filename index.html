@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelBloom - Explore Dream Destinations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">✈️ TravelBloom</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword (e.g., beach, temple, Japan)" />
+      <button id="btnSearch">Search</button>
+      <button id="btnClear" class="btn-secondary">Clear</button>
+    </div>
+  </nav>
+  <main class="hero">
+    <aside class="social-sidebar">
+      <a href="https://twitter.com" target="_blank">𝕏</a>
+      <a href="https://facebook.com" target="_blank">f</a>
+      <a href="https://instagram.com" target="_blank">📸</a>
+      <a href="https://youtube.com" target="_blank">▶</a>
+    </aside>
+    <section class="hero-content">
+      <h1>EXPLORE<br />DREAM<br />DESTINATION</h1>
+      <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+      <button class="btn-book">BOOK NOW</button>
+    </section>
+    <section id="resultsContainer" class="results-container"></section>
+  </main>
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>

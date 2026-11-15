@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - TravelBloom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">✈️ TravelBloom</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <div class="search-placeholder"></div>
+  </nav>
+  <main class="hero page-section">
+    <aside class="social-sidebar">
+      <a href="https://twitter.com" target="_blank">𝕏</a>
+      <a href="https://facebook.com" target="_blank">f</a>
+      <a href="https://instagram.com" target="_blank">📸</a>
+      <a href="https://youtube.com" target="_blank">▶</a>
+    </aside>
+    <div class="contact-wrapper">
+      <div class="contact-Title">
+        <h1>CONTACT US</h1>
+        <p>Get in touch — we would love to help plan your next journey.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
